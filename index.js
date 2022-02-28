@@ -45,9 +45,45 @@ const questions = [
     {
         type: 'input',
         name: 'usageInfo',
-        message: 'How does your app work?',
+        message: 'How do you use your app?',
         validate: usageInfo => {
             if (usageInfo) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    },
+    {
+        type: 'confirm',
+        name: 'confirmGuidelines',
+        message: "Would you like to add contribution guidelines?",
+        default: false
+    },
+    {
+        type: 'input',
+        name: 'contributionGuidelines',
+        message: 'How can other people contribute?',
+        when: ({confirmGuidelines}) => {
+            if (confirmGuidelines) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    },
+    {
+        type: 'confirm',
+        name: 'confirmTest',
+        message: 'Would you like to add testing instructions?',
+        default: false
+    },
+    {
+        type: 'input',
+        name: 'testInstuctions',
+        message: 'How do you test your app?',
+        when: ({confirmTest}) => {
+            if (confirmTest) {
                 return true;
             } else {
                 return false;
