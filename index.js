@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 
 const inquirer = require("inquirer");
+const generateMarkdown = require('./Develop/utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -38,6 +39,7 @@ const questions = [
             if (installInstructions) {
                 return true;
             } else {
+                console.log('Please enter insturctions to install you app!')
                 return false;
             }
         }
@@ -50,6 +52,7 @@ const questions = [
             if (usageInfo) {
                 return true;
             } else {
+                console.log('Please describe how to use your app!')
                 return false;
             }
         }
@@ -90,6 +93,32 @@ const questions = [
             }
         }
     },
+    {
+        type: 'input',
+        name: 'githubName',
+        message: 'What is your Github Username?',
+        validate: githubName => {
+            if (githubName) {
+                return true;
+            } else {
+                console.log('Please enter your Github Username!')
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What email can you be reached at for questions about your app?',
+        validate: email => {
+            if (email) {
+                return true;
+            }else {
+                console.log('Please enter your email')
+                return false;
+            }
+        }
+    }
 ];
 
 // TODO: Create a function to write README file
@@ -98,6 +127,8 @@ function writeToFile(fileName, data) {}
 // TODO: Create a function to initialize app
 function init() {
     return inquirer.prompt(questions)
+    .then(readmeData => {
+        return generateMarkdown(readmeData);})
 }
 
 // Function call to initialize app
