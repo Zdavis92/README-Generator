@@ -1,5 +1,5 @@
 // TODO: Include packages needed for this application
-
+const fs = require('fs');
 const inquirer = require("inquirer");
 const generateMarkdown = require('./Develop/utils/generateMarkdown');
 
@@ -56,6 +56,12 @@ const questions = [
                 return false;
             }
         }
+    },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'What license would you like to apply to your app?',
+        choices: ['MIT', 'Apache', 'Unlicense', 'GNU GPL v3', 'LGPL v3']
     },
     {
         type: 'confirm',
@@ -129,6 +135,7 @@ function init() {
     return inquirer.prompt(questions)
     .then(readmeData => {
         return generateMarkdown(readmeData);})
+        .then(writeToFile)
 }
 
 // Function call to initialize app
