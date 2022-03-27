@@ -64,37 +64,27 @@ const questions = [
         choices: ['MIT', 'Apache', 'Unlicense', 'GNU GPL v3', 'LGPL v3']
     },
     {
-        type: 'confirm',
-        name: 'confirmGuidelines',
-        message: "Would you like to add contribution guidelines?",
-        default: false
-    },
-    {
         type: 'input',
         name: 'contributionGuidelines',
         message: 'How can other people contribute?',
-        when: ({confirmGuidelines}) => {
-            if (confirmGuidelines) {
+        validate: contributionGuidelines => {
+            if (contributionGuidelines) {
                 return true;
             } else {
+                console.log('Please add guidelines for contribution!')
                 return false;
             }
         }
     },
     {
-        type: 'confirm',
-        name: 'confirmTest',
-        message: 'Would you like to add testing instructions?',
-        default: false
-    },
-    {
         type: 'input',
         name: 'testInstuctions',
         message: 'How do you test your app?',
-        when: ({confirmTest}) => {
-            if (confirmTest) {
+        validate: testInstuctions => {
+            if (testInstuctions) {
                 return true;
             } else {
+                console.log('Please add instructions for testing!')
                 return false;
             }
         }

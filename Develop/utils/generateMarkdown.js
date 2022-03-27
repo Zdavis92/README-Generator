@@ -52,6 +52,13 @@ function generateMarkdown(data) {
   ## Description
   ${data.description}
   ## Table of Contents
+  [Description](#description)
+  [Installation](#installation)
+  [Usage](#usage)
+  [License](#license)
+  [Contribution](#contibuting)
+  [Testing](#testing)
+  [Questions](#questions)
   ## Installation
   ${data.installInstructions}
   ## Usage
@@ -60,7 +67,7 @@ function generateMarkdown(data) {
   ${renderLicenseSection(data.license)}
   ## Contributing
   ${data.contributionGuidelines}
-  ## Test
+  ## Testing
   ${data.testInstuctions}
   ## Questions
   https://github.com/${data.githubName}
