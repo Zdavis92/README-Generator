@@ -1,7 +1,7 @@
 # My project
-  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+  [![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
   ## Description
-  It is an app that does things
+  Its an app that does things
   ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
@@ -11,15 +11,15 @@
   - [Testing](#testing)
   - [Questions](#questions)
   ## Installation
-  Pulled from github
+  pull from github
   ## Usage
-  run node index in command line
+  node index
   ## License
-  This app is covered by a GNU GPL v3 license. For more information please checkout this link <https://www.gnu.org/licenses/gpl-3.0>
+  This app is covered by a LGPL v3 license. For more information please checkout this link <https://www.gnu.org/licenses/lgpl-3.0>
   ## Contributing
-  Make a pull request on github
+  no
   ## Testing
-  n/a
+  no
   ## Questions
-  https://github.com/Zdavis92
-  zacharydavis92@gmail.com
+  - Github: https://github.com/Zdavis92
+  - Email: zacharydavis92@gmail.com
