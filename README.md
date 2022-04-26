@@ -7,7 +7,7 @@
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
-  - [Contribution](#contibuting)
+  - [Contribution](#contributing)
   - [Questions](#questions)
   ## Installation
   The code can be pulled from Github
