@@ -12,7 +12,7 @@
   ## Installation
   The code can be pulled from Github
   ## Usage
-  While in the root folder, run "node index" in your command line and answer the questions pertaining to your app. After all the questions have been answered, the new README file will be generated and added to the "dist" folder.
+  While in the root folder, run "npm i" to install the dependencies. Once finished run "node index" in your command line and answer the questions pertaining to your app. After all the questions have been answered, the new README file will be generated and added to the "dist" folder.
   ## License
   This app is covered by a MIT license. For more information please checkout this link <https://opensource.org/licenses/MIT>
   ## Contributing
@@ -20,3 +20,4 @@
   ## Questions
   - Github: https://github.com/Zdavis92/README-Generator
   - Email: zacharydavis92@gmail.com
+  - video walkthough: https://drive.google.com/file/d/1px7WK4cRrlrQToh6FPSs9iqBGAFOPkL0/view

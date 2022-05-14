@@ -1,4 +1,4 @@
-# README Generator
+# READEME generator
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Description
   A command line app that prompts the user for inforamtion then generates a README.md file with the inputs. Writen in node js with javascript and using the "inquirer" npm.
@@ -13,7 +13,7 @@
   ## Installation
   The code can be pulled from Github
   ## Usage
-  While in the root folder, run node index in your command line and answer the questions pertaining to your app. After all the questions have been answered, the new README file will be generated and added to the "dist" folder.
+  While in the root folder, run "npm i" to install the dependencies. Once finished run "node index" in your command line and answer the questions pertaining to your app. After all the questions have been answered, the new README file will be generated and added to the "dist" folder.
   ## License
   This app is covered by a MIT license. For more information please checkout this link <https://opensource.org/licenses/MIT>
   ## Contributing
